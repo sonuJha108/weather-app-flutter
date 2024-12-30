@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // its return the Material page 
     return MaterialApp(
       // remove the debug label from the apps
       debugShowCheckedModeBanner: false,
