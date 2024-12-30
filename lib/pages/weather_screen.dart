@@ -24,8 +24,11 @@ class WeatherScreen extends StatelessWidget {
         ],
       ),
 
+  // padding all the body
       body: Padding(
+      
         padding: const EdgeInsets.all(16.0),
+        // type the column and create the all the UI in the column sections 
         child: Column(
           children: [
             // write the code with the main card in the weather apps
@@ -38,6 +41,8 @@ class WeatherScreen extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16),
                     ),
+
+                    // elevation of the small containers 
                 elevation: 10,
                 child: Padding(
                   padding: EdgeInsets.all(16.0),
@@ -49,13 +54,18 @@ class WeatherScreen extends StatelessWidget {
                         TextStyle(
                             fontSize: 32, fontWeight: FontWeight.bold),
                       ),
+
+                      // spacing in the two elements using the sized Box 
                       SizedBox(
                         height: 16,
                       ),
+                      // create the ICONS using the Icon widget. 
                       Icon(
                         Icons.cloud,
                         size: 64,
                       ),
+
+                      // spacing in the two elements using the sized Box 
                       SizedBox(
                         height: 16,
                       ),
